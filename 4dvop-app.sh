@@ -6,7 +6,7 @@
 ### Install and configure NGINX
 sudo apt -y update && sudo apt -y install epel-release && sudo apt -y install nginx git
 sudo rm -Rf /usr/share/nginx/html/*
-sudo git clone https://github.com/diranetafen/static-website-example.git /usr/share/nginx/html/
+sudo git clone https://github.com/pascalito007/4dvop-app.git /usr/share/nginx/html/
 sudo sed -i 's/80 default_server/8080 default_server/g' /etc/nginx/nginx.conf
 sudo systemctl restart nginx
 sudo systemctl enable nginx
