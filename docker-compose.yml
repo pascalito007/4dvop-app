@@ -1,11 +1,11 @@
 version: '3'
 services:
   nginx:
-    image: nginx-tp:latest
+    image: pasciano007/nginx-tp:latest
     ports:
       - "8080:8080"
   haproxy:
-    image: ha-tp:latest
+    image: pasciano007/ha-tp:latest
     ports:
       - "80:80"
     depends_on:
